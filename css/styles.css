@@ -47,6 +47,9 @@ li {
 img {
   display: block;
 }
+input {
+  font-family: inherit;
+}
 .header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -471,4 +474,237 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+}
+
+.footer-form {
+  margin-left: 80px;
+}
+.footer-form-group {
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: flex;
+  gap: 24px;
+}
+
+.footer-form-title {
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding-bottom: 16px;
+  padding-left: 80px;
+}
+
+.footer-btn {
+  display: inline-flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 4px;
+  background: #4d5ae5;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.footer-icon-btn {
+  fill: #fff;
+}
+
+.footer-mail {
+  width: 264px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background: #2e2f42;
+}
+input::placeholder {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+}
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  background: rgba(46, 47, 66, 0.4);
+  position: fixed;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: visible;
+  pointer-events: none;
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal-window {
+  width: 408px;
+  min-height: 584px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #fcfcfc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 72px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
+
+.modal-close {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: #e7e9fc;
+  border: 1px solid #2e2f42;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover {
+  background-color: #404bbf;
+  fill: #ffffff;
+}
+
+.modal-close:focus {
+  background-color: #404bbf;
+  fill: #ffffff;
+}
+
+.modal-icon-close {
+}
+.modal-form {
+}
+.modal-group-title {
+  color: #2e2f42;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding-bottom: 16px;
+}
+
+.modal-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.modal-form-label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: #8e8f99;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+
+.modal-checkbox {
+  display: flex;
+  flex-direction: row;
+  padding-top: 16px;
+  margin-bottom: 24px;
+  gap: 8px;
+}
+
+.modal-input {
+  width: 360px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  padding-left: 38px;
+  outline: transparent;
+}
+
+.modal-input:focus {
+  border-color: #4d5ae5;
+}
+
+.modal-input:focus + .form-icon-btn {
+  fill: #4d5ae5;
+}
+
+.modal-comment {
+  width: 360px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  padding-left: 16px;
+  padding-top: 8px;
+  outline: transparent;
+}
+
+.modal-comment:focus {
+  border-color: #4d5ae5;
+}
+
+.accept-link {
+  text-decoration-line: underline;
+  color: #4d5ae5;
+}
+
+.form-icon-btn {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.modal-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 32px;
+  align-items: center;
+  border-radius: 4px;
+  background: #4d5ae5;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  width: 169px;
+  cursor: pointer;
 }
